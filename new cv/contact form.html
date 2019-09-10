@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contact form</title>
+    <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+<div class="container">
+    <form action="action_page.php">
+<label for="fname">First name</label>
+<input type="text" id="fname" name="firstnme" placeholder="Your Name">
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Last Name">
+<label for="email" >email</label>
+<input type="email" id="email" placeholder="email">
+<br>
+<label for="subject">subject</label>
+<textarea id="subject" name="subject" placeholder="Message me" style="height:100px" maxlength="40" minlength="10"></textarea>
+<input type="submit" value="submit">
+    </form>
+</div>
+</body>
+<style>
+    input[type=text], input[type=email],select,textarea{
+        width:100%;
+        padding:12px;
+        border:1px solid #55baed;
+        border-radius:4px;
+        box-sizing:border-box;
+        margin: auto;
+        margin-bottom:auto;
+        margin-left:auto;
+        margin-right: auto;
+        resize:both;
+    }
+    input[type=submit]{
+        background-color: #55acee;
+        color:white;
+        padding:12px 20px;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+    }
+    input[type=submit]:hover{
+        background-color: aquamarine;
+        color:blueviolet;
+    }
+    .container{
+        border-radius: 5px;
+        background-color: #ddd;
+        padding:20px;
+    }
+    @media screen and (max-width: 550px){
+    .container{ float:none;
+     display:grid;
+    width:auto;
+    padding:0 0 0 140px;}
+    }
+</style>
+</html>
